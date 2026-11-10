@@ -1481,3 +1481,13 @@ a {
         margin-left: 12px;
     }
 }
+
+/* 오시는 길 예식장 이름 스타일 */
+.location__venue {
+    font-weight: 700 !important;
+}
+
+.location__hall {
+    font-size: 13px !important;
+    margin-top: 4px !important;
+}
