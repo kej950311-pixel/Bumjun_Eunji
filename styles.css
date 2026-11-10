@@ -1318,11 +1318,14 @@ a {
 }
 
 .location__guide-title {
+   .location__guide > .section__title {
+    font-weight: 400;
+}
     margin: 0 0 16px;
     font-size: 16px;
     font-weight: 700;
     color: #51483e;
-    text-align: left;
+    text-align: center;
 }
 
 .location__bus-item {
