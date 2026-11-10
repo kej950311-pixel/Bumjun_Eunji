@@ -46,6 +46,7 @@ const CONFIG = {
     date: "2027-06-19",
     time: "12:10",
     venue: "더아리엘",
+    hall: "6층 스카이가든홀",
     address: "경기도 수원시 팔달구 중부대로 181",
     mapLinks: {
       kakao: "https://place.map.kakao.com/1298739354",
