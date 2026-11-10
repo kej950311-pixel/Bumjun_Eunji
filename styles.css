@@ -1505,3 +1505,9 @@ a {
         display: block;
     }
 }
+
+.location-hall {
+    font-size: 13px;
+    margin-top: 4px;
+    font-weight: 400;
+}
