@@ -1457,11 +1457,16 @@ a {
 /* 모바일 화면에서만 제목 크기 조정 */
 @media (max-width: 600px) {
 
-    /* 편의시설 안내 */
+    /* 편의시설 안내 */ㅇ
     .facility .section__title {
         font-size: 22px !important;
     }
-
+   
+/* 포토부스 설명 글씨 */
+.facility__main-text {
+    font-size: 16px !important;
+}
+   
     /* 교통안내 */
     .location__guide > .section__title {
         font-size: 22px !important;
