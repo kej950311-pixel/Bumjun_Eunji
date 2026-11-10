@@ -1453,3 +1453,18 @@ a {
     text-align: center !important;
     font-weight: 700 !important;
 }
+
+/* 모바일 화면에서만 제목 크기 조정 */
+@media (max-width: 600px) {
+
+    /* 편의시설 안내 */
+    .facility .section__title {
+        font-size: 22px !important;
+    }
+
+    /* 교통안내 */
+    .location__guide > .section__title {
+        font-size: 22px !important;
+    }
+
+}
