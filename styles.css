@@ -1158,7 +1158,8 @@ a {
 /* 전체 영역 */
 .facility {
     text-align: center;
-    padding: 65px 20px;
+    padding: 35px 20px;
+    background: #f8f6ef;
 }
 
 .facility .section__inner {
@@ -1260,9 +1261,9 @@ a {
 
 /* 모바일 화면 */
 @media (max-width: 600px) {
-    .facility {
-        padding: 45px 20px;
-    }
+.facility {
+    padding: 30px 20px;
+}
 
     .facility__tabs {
         margin-bottom: 24px;
@@ -1300,10 +1301,12 @@ a {
     width: 100%;
     max-width: 520px;
     margin: 30px auto 0;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 16px;
     box-sizing: border-box;
+    background: #ffffff;
 }
 
 .location__guide-section {
