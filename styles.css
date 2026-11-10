@@ -1468,3 +1468,11 @@ a {
     }
 
 }
+
+/* 모바일에서만 하차 안내 줄바꿈 */
+@media (max-width: 600px) {
+    .location__bus-walk {
+        display: block;
+        margin-left: 12px;
+    }
+}
