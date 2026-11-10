@@ -1444,7 +1444,7 @@ a {
 }
 
 /* 교통안내 제목 */
-.location__guide-title {
+.location__guide > .section__title {
     text-align: center !important;
     font-weight: 400 !important;
 }
@@ -1452,6 +1452,7 @@ a {
 /* 버스, 주차 제목 */
 .location__guide-section > h3 {
     text-align: center !important;
+    font-weight: 700 !important;
 }
 
 /* 교통안내 제목 가운데 정렬 */
