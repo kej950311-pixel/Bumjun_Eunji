@@ -1071,9 +1071,9 @@ a {
    Responsive - Desktop (1024px+)
    ═══════════════════════════════════════════ */
 @media screen and (min-width: 1024px) {
-    .section {
-        min-height: 100vh;
-    }
+.section:not(.facility) {
+    min-height: 100vh;
+}
 
     .section-hero {
         flex-direction: row;
@@ -1427,4 +1427,29 @@ a {
         padding: 18px 16px;
         border-radius: 14px;
     }
+}
+
+/* 편의시설 영역 높이 및 간격 최종 조정 */
+.section.facility {
+    min-height: auto !important;
+    height: auto !important;
+    padding-top: 25px !important;
+    padding-bottom: 35px !important;
+}
+
+.facility .section__inner {
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 0 auto !important;
+}
+
+/* 교통안내 제목 */
+.location__guide-title {
+    text-align: center !important;
+    font-weight: 400 !important;
+}
+
+/* 버스, 주차 제목 */
+.location__guide-section > h3 {
+    text-align: center !important;
 }
