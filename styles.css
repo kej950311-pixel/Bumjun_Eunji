@@ -1443,20 +1443,16 @@ a {
     margin: 0 auto !important;
 }
 
-/* 교통안내 제목 */
-.location__guide > .section__title {
+/* 교통안내 제목 - 가운데 정렬, 일반 굵기 */
+.location__guide > h2.section__title {
+    display: block !important;
+    width: 100% !important;
     text-align: center !important;
     font-weight: 400 !important;
 }
 
-/* 버스, 주차 제목 */
-.location__guide-section > h3 {
+/* 버스, 주차 제목 - 가운데 정렬, 굵게 */
+.location__guide-section > h3.location__guide-title {
     text-align: center !important;
     font-weight: 700 !important;
-}
-
-/* 교통안내 제목 가운데 정렬 */
-.location__guide > .section__title {
-    text-align: center !important;
-    font-weight: 400 !important;
 }
