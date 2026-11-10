@@ -1149,3 +1149,147 @@ a {
         transform: none !important;
     }
 }
+
+
+/* ========================================
+   편의시설 안내 - 포토부스 & ATM 디자인
+======================================== */
+
+/* 전체 영역 */
+.facility {
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.facility .section__inner {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* 제목 */
+.facility .section__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 탭 영역 */
+.facility__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 480px;
+    margin: 0 auto 30px;
+    border-bottom: 1px solid #e9b5aa;
+    gap: 8px;
+}
+
+/* 탭 버튼 */
+.facility__tab {
+    flex: 1;
+    padding: 15px 10px;
+    border: 1px solid #ead5ca;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    background: #fffaf5;
+    color: #8b756a;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* 선택된 탭 */
+.facility__tab.is-active {
+    background: #fff0eb;
+    color: #d66f61;
+    border-color: #e8a093;
+    transform: translateY(1px);
+}
+
+/* 탭에 마우스를 올렸을 때 */
+.facility__tab:hover {
+    background: #fff0eb;
+    color: #d66f61;
+}
+
+/* 이미지 영역 */
+.facility__image {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto 22px;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.facility__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 310px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 22px;
+}
+
+/* 설명 영역 */
+.facility__description {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.9;
+}
+
+/* 주요 설명 */
+.facility__main-text {
+    margin: 0 auto 18px;
+    color: #51463f;
+    font-size: 16px;
+    line-height: 1.9;
+    word-break: keep-all;
+}
+
+/* 보조 설명 */
+.facility__sub-text {
+    margin: 0 auto;
+    color: #8b7c72;
+    font-size: 14px;
+    line-height: 2;
+    word-break: keep-all;
+}
+
+/* 모바일 화면 */
+@media (max-width: 600px) {
+    .facility {
+        padding: 45px 20px;
+    }
+
+    .facility__tabs {
+        margin-bottom: 24px;
+        gap: 6px;
+    }
+
+    .facility__tab {
+        padding: 12px 8px;
+        font-size: 15px;
+    }
+
+    .facility__image {
+        max-width: 100%;
+        margin-bottom: 18px;
+        border-radius: 18px;
+    }
+
+    .facility__image img {
+        max-height: 260px;
+        border-radius: 18px;
+    }
+
+    .facility__main-text {
+        font-size: 15px;
+    }
+
+    .facility__sub-text {
+        font-size: 13px;
+    }
+}
