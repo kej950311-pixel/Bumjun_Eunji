@@ -615,7 +615,7 @@ a {
    ═══════════════════════════════════════════ */
 .section-location {
     background-color: #fff;
-    padding: 60px 20px;
+    padding: 30px 20px;
     min-height: auto !important;
     height: auto;
     justify-content: flex-start;
@@ -1158,7 +1158,7 @@ a {
 /* 전체 영역 */
 .facility {
     text-align: center;
-    padding: 35px 20px;
+    padding: 25px 20px 45px;
     background: #f8f6ef;
 }
 
