@@ -539,6 +539,7 @@
   function initLocation() {
     const w = CONFIG.wedding;
     $('#locationVenue').textContent = w.venue;
+    $('#locationHall').textContent = w.hall;
     $('#locationAddress').textContent = w.address;
     $('#locationMapImg').src = 'images/location/1.jpg';
     $('#kakaoMapBtn').href = w.mapLinks.kakao || '#';
