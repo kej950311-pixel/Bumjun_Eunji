@@ -1453,3 +1453,9 @@ a {
 .location__guide-section > h3 {
     text-align: center !important;
 }
+
+/* 교통안내 제목 가운데 정렬 */
+.location__guide > .section__title {
+    text-align: center !important;
+    font-weight: 400 !important;
+}
