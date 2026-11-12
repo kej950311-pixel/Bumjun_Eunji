@@ -1620,3 +1620,25 @@ a {
     overflow: visible !important;
   }
 }
+
+/* 카카오톡 공유 버튼 */
+.kakao-share-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+  padding: 0 20px;
+}
+
+.kakao-share-btn {
+  width: 100%;
+  max-width: 320px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #FEE500;
+  color: #191919;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
