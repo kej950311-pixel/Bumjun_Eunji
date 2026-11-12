@@ -356,8 +356,8 @@
 
   function initStory(storyImages) {
     $('#storyTitle').textContent = CONFIG.story.title;
-    $('#storyContent').textContent = CONFIG.story.content;
-
+$('#storyContent').innerHTML = CONFIG.story.content;
+    
     const topContainer = $('#storyPhotos');
     const bottomContainer = $('#storyPhotosBottom');
 
