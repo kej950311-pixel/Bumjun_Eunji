@@ -717,26 +717,45 @@
     init();
   }
 
-    // ═══ Kakao Talk Share ═══
+  // ═══ Kakao Talk Share ═══
   const KAKAO_JS_KEY = '6b6bb324fa9e2d8e77b77db9747e96a0';
 
-  if (window.Kakao && !window.Kakao.isInitialized()) {
-    window.Kakao.init(KAKAO_JS_KEY);
+  function initKakaoShare() {
+    const shareButton = document.getElementById('kakaoShareBtn');
+
+    if (!shareButton) return;
+
+    shareButton.addEventListener('click', function () {
+      if (!window.Kakao) {
+        alert('카카오 SDK를 불러오지 못했습니다. 새로고침 후 다시 시도해 주세요.');
+        return;
+      }
+
+      if (!window.Kakao.isInitialized()) {
+        window.Kakao.init(KAKAO_JS_KEY);
+      }
+
+      if (!window.Kakao.Share) {
+        alert('카카오 공유 기능을 사용할 수 없습니다.');
+        return;
+      }
+
+      try {
+        window.Kakao.Share.sendCustom({
+          templateId: 138887
+        });
+      } catch (error) {
+        console.error('카카오 공유 오류:', error);
+        alert('카카오톡 공유 중 오류가 발생했습니다.');
+      }
+    });
   }
 
-  document.addEventListener('click', function (event) {
-    const button = event.target.closest('#kakaoShareBtn');
-    if (!button) return;
-
-    if (!window.Kakao || !window.Kakao.isInitialized()) {
-      alert('카카오 공유 기능을 불러오지 못했습니다.');
-      return;
-    }
-
-    window.Kakao.Share.sendCustom({
-      templateId: 138887
-    });
-  });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initKakaoShare);
+  } else {
+    initKakaoShare();
+  }
 })();
 
 /* ─── 포토부스 / ATM 탭 전환 ─── */
